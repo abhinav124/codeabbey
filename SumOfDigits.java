@@ -2,13 +2,13 @@
 
 import java.util.*;
 
-class Solution
+class SumofDigits
 {
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
 		int nextCase = sc.nextInt();
-		
+
 		for(int i = 0; i < nextCase; i++)
 		{
 			int a = sc.nextInt();
@@ -18,7 +18,7 @@ class Solution
 			System.out.println(total);
 			int ans = total;
 			ans = ans % 10;
-			
+
 			while(ans != 0)
 			{
 				System.out.println(ans);
