@@ -15,14 +15,15 @@ class SumofDigits
 			int b = sc.nextInt();
 			int c = sc.nextInt();
 			int total = (a * b) + c;
-			System.out.println(total);
-			int ans = total;
-			ans = ans % 10;
+			// System.out.println(total);
+			int sum = 0;
 
-			while(ans != 0)
+			while(total != 0)
 			{
-				System.out.println(ans);
+				sum += total % 10;
+				total /= 10;
 			}
+				System.out.println(sum + " ");
 		}
 	}
 }
